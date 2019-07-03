@@ -7,17 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ConsecutiveNumbersTest {
-    ConsecutiveNumbers numbers;
+    ConsecutiveNumbersChecker numbers;
     @Before
     public void setUp()
     {
-        System.out.println("Before");
-        numbers=new ConsecutiveNumbers();
+
+        numbers=new ConsecutiveNumbersChecker();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         numbers=null;
     }
     @Test

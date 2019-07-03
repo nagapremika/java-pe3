@@ -1,6 +1,6 @@
 package com.stackroute.pe3;
 
-public class Exceptions {
+public class Exceptions {       //Raises different exceptions
     public static String arrayHandling(int size,int[] array,Exceptions e){
         String str="";
         try {

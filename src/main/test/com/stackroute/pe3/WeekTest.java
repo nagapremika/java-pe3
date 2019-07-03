@@ -13,24 +13,23 @@ import java.util.Date;
 import static org.junit.Assert.*;
 
 public class WeekTest {
-   Week week;
+   WeekTester week;
 
     @Before
     public void setUp()
     {
-        System.out.println("Before");
-        week=new Week();
+
+        week=new WeekTester();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
         week=null;
     }
     @Test
     public void givenShouldReturnFirstAndLastDateOfWeek() {
 //        act
-        Week.Result result =week.date();
+        WeekTester.Result result =week.date();
 //        assert
         assertEquals("Mon 01/07/2019",result.firstday);
         assertEquals("Sun 07/07/2019",result.lastday);

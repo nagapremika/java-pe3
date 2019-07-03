@@ -7,17 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ChessTest {
-    Chess chess;
+    ChessMaker chess;
     @Before
     public void setUp()
     {
-        System.out.println("Before");
-        chess=new Chess();
+
+        chess=new ChessMaker();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         chess=null;
     }
     @Test
@@ -41,7 +41,7 @@ public class ChessTest {
 //        act
         String result=chess.chessBoard(7,8);
 //        assert
-        assertEquals("Error" ,result);
+        assertEquals("rows not equal to columns" ,result);
     }
     @Test
     public void givenRowAndColZeroShouldReturnError()
@@ -49,7 +49,7 @@ public class ChessTest {
 //        act
         String result=chess.chessBoard(0,0);
 //        assert
-        assertEquals("Error" ,result);
+        assertEquals("Invalid" ,result);
     }
 
 }

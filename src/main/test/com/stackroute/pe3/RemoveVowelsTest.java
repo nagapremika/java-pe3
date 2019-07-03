@@ -7,12 +7,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RemoveVowelsTest {
-    RemoveVowels removevowels;
+    VowelsRemover removevowels;
     @Before
     public void setUp()
     {
         System.out.println("Before");
-        removevowels=new RemoveVowels();
+        removevowels=new VowelsRemover();
     }
     @After
     public void tearDown()

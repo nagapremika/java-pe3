@@ -12,13 +12,13 @@ public class StudentTest {
     @Before
     public void setUp()
     {
-        System.out.println("Before");
+
         student=new Student();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         student=null;
     }
     @Test
@@ -35,7 +35,7 @@ public class StudentTest {
 //        act
         String result=student.grades(new int[]{67, 23, 900, 89},4);
 //        assert
-        assertEquals("Error",result);
+        assertEquals("Invalid grades",result);
     }
     @Test
     public void givenGradesLessThanSizeShouldReturnError() throws ArrayIndexOutOfBoundsException
@@ -43,7 +43,7 @@ public class StudentTest {
 //        act
         String result=student.grades(new int[]{67, 23, 90},4);
 //        assert
-        assertEquals("Error",result);
+        assertEquals("Invalid size",result);
     }
 
 

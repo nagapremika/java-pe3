@@ -1,20 +1,20 @@
 package com.stackroute.pe3;
 
-public class ConsecutiveNumbers {       //This class specifies whether the given number are consecutive or not
+public class ConsecutiveNumbersChecker {       //This class specifies whether the given number are consecutive or not
     public String consecutive(String numbers)
     {
         String result="";
         String[] number=numbers.split(" ");
         int array[]=new int[7];
-        for(int i=0;i<7;i++)
-            array[i]=Integer.valueOf(number[i]);
-        if(array[0]+1==array[1]) {
+        for(int i=0;i<7;i++) {
+            array[i] = Integer.valueOf(number[i]);
+        }if(array[0]+1==array[1]) {
             for (int i = 0; i < 6; i++) {
-                if (array[i + 1] != array[i] + 1)
+                if (array[i + 1] != array[i] + 1) {
                     result = "Non consecutive numbers";
-                else
-                    result="consecutive numbers";
-
+                }else {
+                    result = "consecutive numbers";
+                }
 
             }
                   }

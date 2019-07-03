@@ -1,25 +1,25 @@
 package com.stackroute.pe3;
 
 
-    public class UserDefinedException  {
+    public class UserDefinedException  {  //Raises userdefined exception
         public UserDefinedException(String str) {
         }
-        public static String main(String s) {
-            if(s==null)
-                return "Error";
-            try {
-                throw new UserDefinedException(s);
+        public static String main(int number) {
+            String display;
+            try{
+               display="Exception is raised when number is less than 0";
+                if(number<0){
+                    throw new Exception(display);
+                }
             }
-            catch(Exception e) {
-
-                System.out.println(s);
-                throw new UserDefinedException(s);
+            catch (Exception e)
+            {
+                display="catch block";
             }
-            finally {
-                s=s+" This is finally clause.";
-                return s;
+        finally {
+                display="Finally block";
             }
-
+            return display;
         }
     }
 

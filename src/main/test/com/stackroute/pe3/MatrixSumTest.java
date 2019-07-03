@@ -7,17 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MatrixSumTest {
-    MatrixSum matrix;
+    MatrixAdder matrix;
     @Before
     public void setUp()
     {
-        System.out.println("Before");
-        matrix=new MatrixSum();
+
+        matrix=new MatrixAdder();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         matrix=null;
     }
     @Test
@@ -36,7 +36,7 @@ public class MatrixSumTest {
 //        act
         String result=matrix.addition(-2,2, new int[][]{{1, 2},{ 3, 4}}, new int[][]{{2, 3},{ 4, 5}});
 //        assert
-        assertEquals("Error",result);
+        assertEquals("Sum not allowed",result);
     }
     @Test
     public void givenThreeByTwoMatrixShouldReturnMatrixSum()

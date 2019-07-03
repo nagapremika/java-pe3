@@ -24,13 +24,10 @@ public class UserDefinedExceptionTest {
     }
     @Test
     public void givenclassShouldThrowException(){
-        String result=main("string");
-        assertEquals("string This is finally clause.",result);
+        String result=main(-23);
+        assertEquals("Finally block",result);
+
     }
-    @Test
-    public void givenClassShouldNotReachToFinallyStatement(){
-        String result=main(null);
-        assertEquals("Error",result);
-    }
+
 }
 

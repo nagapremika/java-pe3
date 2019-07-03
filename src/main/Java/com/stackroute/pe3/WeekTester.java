@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Week {
+public class WeekTester {   //Gives first and last day of week
  public class Result{
      String firstday,lastday;
 
